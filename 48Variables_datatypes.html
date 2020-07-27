@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables, data types</title>
+    <script>
+        var a = 78; /*This is called dynamic typing, without defining whether a variable is integer or string*/
+        var b = 'Yadu';
+        var c = 34.5;
+        c = -c   /* Unary operator*/
+        c = 456 + c
+        console.log('c is',c)
+        //Operators
+        // In 3 + 4, + is operator, 3 and 4 is operand.
+        // 1. Unary operator, it has single operand.
+        // Ex (x = -x) is unary operator
+
+        // 2. Binary operator: It has two opearnd. x = (x + 6)
+
+        // Arithmetic operator
+        // We will use string concatenation like using {"hai" + "my" + "name"}
+        var num1 = 10;
+        var num2 = 7;
+        console.log("Value of num1 + num2 is " + (num1 + num2));
+        console.log('Value of num1 - num2 is ' + (num1 - num2));  
+        console.log('Value of num1 * num2 is ' + (num1 * num2));
+        console.log('Value of num1 / num2 is ' + (num1 / num2));
+        console.log('Value of num1 ** num2 is '+ (num1 ** num2)); /*Exponentiation*/
+
+        // Increment ++at the beginning and ++ at back
+        var num3 = 1
+        console.log('Value of num3 ++ is '+ (num3 ++)); /*Prints same value*/
+        console.log('Value of +num3  is '+ (+num3)); /*Increment once*/
+        console.log('Value of ++num3 increment twice is '+ (++num3 ));
+
+        // Decrement once and twice
+        var num4 = 20;
+        console.log('Value of num4 -- '+ (num4--)); /*Same*/
+        console.log('Value of -num4 is '+ (-num4))/* here (-1) - (20) = -19*/
+         /*now num4 is -19 next step (-1) - (-19) = 18*/ 
+        console.log('Value of --num4 is '+ (--num4));
+         /*This step takes that is num4 takes previous value like (-1) - (-19) which is +18*/
+
+    </script>
+</head>
+<body>
+    <div class="container">
+    <h2>This is a head line</h2>
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
+             repellat! Soluta voluptatem debitis praesentium autem possimus dolorem 
+             delectus quaerat quisquam corporis adipisci, nisi consequuntur alias 
+             fuga consectetur facilis ea quam!</p>
+    </div>
+    </div>    
+</body>
+</html>

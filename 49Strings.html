@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+<body>
+    <div class="container">
+        <div id="content"></div>
+        <p>Lorem ipsum dolor sit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, quam?</p>
+    </div>
+    <script>
+        var myname = 'My name '
+        var is = 'is '
+        var name = 'Yadunandana'
+        var skill = 'Programming'
+        // Using fill in the blank with '$' symbol
+        var temp = `${name} is very good in ${skill}`;
+        var len = name.length
+        console.log(myname + is + name)
+        console.log(temp)
+        console.log(`this is length of string var len ${len}`)
+        
+
+        console.log('Hello world \n Yadu') /* USing escape sequence character*/
+        // In above Yadu is printed in next line
+        console.log('Hello \t using slash T which is tab and \b backspace is here')
+
+
+        // Making string constructors using var
+        var y = new String("This is string")
+        console.log('String using string constructor, press on > symbol in web page',y)
+    
+    // String methods
+    document.getElementById('content').innerHTML='<h3> This is an h3 heading</h3>'
+    </script>
+</body>
+</html>

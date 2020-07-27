@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String functions</title>
+</head>
+<body>
+    <p>This is to use string functions, press F12</p>
+    <script>
+        var stris = 'This is a string'
+        console.log(stris)
+        // Gives first occurence of substring
+        var position = stris.indexOf('i')
+        console.log('This prints index of i is',position)
+        position = stris.lastIndexOf('i')
+        console.log('Last occurence of i index is',position)
+
+        // If you want substring from main string use slice
+        var substring = stris.slice(3,7);
+        // starting and ending index given inside slice
+        console.log('substring is   ',substring)
+        
+        // Different types
+        var substringtype2 = stris.substring(1,5)
+        // Above won't use negative indexing
+
+        var substringtype3 = stris.substr(1,8)
+
+        // Using string replacing
+        var replaced = stris.replace('string','Yadu')
+        console.log('original string is ',stris)
+        console.log('replaced string is ',replaced)
+
+        console.log('convereted to uppercase',stris.toUpperCase())
+console.log('lowercase',stris.toLowerCase())
+
+// CONCATENATE
+var newstring =stris.concat(' :New String')
+console.log(newstring)
+
+// Using trim function to remove white spaces
+var stringwithwhitespace = 'This       is            white     space';
+console.log('with white space: ',stringwithwhitespace)
+console.log('without whitespace ',stringwithwhitespace.trim())
+
+// returning string with index number
+var character2 = stris.charAt(2)
+console.log('At index 2 present string is ',character2)
+
+console.log('using slicing  ',stris[2])
+</script>
+</body>
+</html>
