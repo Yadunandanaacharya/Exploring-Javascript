@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects</title>
+</head>
+<body>
+    <div class="container">Simple Html document</div>
+    <p>Primitive and reference variable</p>
+    <p><ul>
+        <li>Integer is primitive</li>
+        <li>String is primitive</li>
+        </ul>
+    </p>
+<br>
+<p>Objects will store Key-value pairs, use ':', DOM means Document object module</p>
+<p>We will use "new" to create new object. If you use "new Array" new object of type array will be created</p>
+</body>
+<script>
+    var myVar = 40;
+    let myVar1 = 50;   /* integer primitu=ive tu=ype*/
+    let myVar2 = 'String is ';
+    let myVar3 = true;
+    let myVar4 = null;
+    let myVar5 = undefined;
+    let myVar6;  /* This is undefined type*/
+
+    let emp = {
+        Id : 101,
+        Name : "Yadu",
+        "Salary" : 10,
+    } 
+    console.log('Example of key value pairs object',emp);
+    console.log('emp.Id  ',emp.Id);
+    console.log("emp['Name']:   ",emp['Name']);
+let arrayis = [1, 2, "Hai", undefined, 89, 0, 54];
+console.log("this is old array",arrayis);
+ 
+ let anotherarray = new Array('Hai', 23, 'This', 67, 'Is');
+ console.log('Creating array with new Array ',anotherarray);
+ console.log('Length of new Array ',anotherarray.length);
+ arrayis = arrayis.sort();  /*Sorting an array*/
+ console.log('Sorted arrays is',arrayis);
+
+ let usePush = arrayis.push('This is Pushed');
+ console.log('After using push ',arrayis);
+
+ let array1 = new Array(23);
+ console.log('This array is Empty multiplied by 23 items in array1, means 23 undefined elements will be there: ',array1);
+console.log('This is empty example of array1 ',array1[0])
+</script>
+</html>
