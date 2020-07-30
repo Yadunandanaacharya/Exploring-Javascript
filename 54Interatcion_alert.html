@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interatcion using Alert prompt confirm</title>
+</head>
+<body>
+    <div class="container">
+        This is a web page
+    </div>
+    <script>
+        // Alerts in browser javascript - does not return anything
+        // alert("This is a message(this is called modal");
+        let alertVariable = alert("This is a message(this is called modal");
+        console.log('Alert does not return anything',alertVariable);
+
+        // Using prompt
+        let promptVariable = prompt("Enter your name","Guest");
+        console.log('This is name entered in prompt',promptVariable);
+// Using confirm
+
+// let deletepost = confirm("Do you really want to delete this post?")
+// console.log('Response:  ',deletepost)
+
+// You can also do like below.
+if(deletepost){
+    // Code to delete the post.
+    console.log("Your post has been deleted successfully")
+}else{
+    // Code to cancel the deletion of the post.
+    console.log("Your post has not been deleted")
+}
+
+    </script>
+</body>
+</html>
