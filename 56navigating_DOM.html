@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating DOM</title>
+</head>
+<body>
+    <p>Document object module</p>
+    <div id='main' class="container">
+        <ul id='nav'>  /*id will be unique always*/
+            <li>Home</li>
+            <li>Contact us</li>
+            <li>Our services</li>
+            <li>Address</li>
+        </ul>
+    </div>
+    <div class="container">
+        This is another container Example for class
+        <ul>
+            <li>This is</li>
+            <li>container</li>
+            <li>Example</li>
+            <li>For class</li>
+        </ul>
+    </div>
+    <script>
+        let main = document.getElementById('main')
+        console.log(main)
+        console.log('Above will show main container')
+        let navis = document.getElementById('nav')
+        console.log(navis)
+        console.log('With nav is id of unordered list list elements will be displayed with this')
+   let containers = document.getElementsByClassName('container')
+   console.log(containers)
+//    you can access containers like below
+console.log(containers[0])
+console.log('above is first container')
+console.log(containers[1])
+console.log('above second is ')
+
+// Using css selectore
+let selectorcssis = document.querySelector('.container');
+console.log('This is example of css selector with id. ',selectorcssis)
+
+let selectorcssisforhash = document.querySelector('#nav');
+console.log('This is example of css selector with hash nav',selectorcssisforhash)
+
+let selectorcssforlist = document.querySelector('#nav>li');
+console.log('This is example of css selector returns first li elemenet',selectorcssforlist)
+
+let selectorcssALL = document.querySelectorAll('#nav>li');
+console.log('This is example of css selector returns AlL li elements',selectorcssALL)
+
+
+    </script>
+    
+</body>
+</html>

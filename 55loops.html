@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <div class="container">
+        This is about loops
+    </div>
+    <script>
+        console.log("This is about loops");
+    let i = 0;
+    for (i=0; i<3; i++){
+        console.log('This is Hello with for loop',i)
+    }
+    document.write("\n\n")
+
+    // Impliment with array
+    let freinds = ['Arun', 'Anand', 'Saravanan', 'Prashanth'];
+    for (let index = 0; index < freinds.length; index++) {
+        const element = freinds[index];
+        console.log('My friends are '+ element+' Hai');
+        console.log('I can also use like this freinds[index] ',freinds[index]);
+    }
+    document.write("\n\n")
+
+    // Using for each loop, don't use friends array, as it is already used.
+    let numbers = [1, 2, 3, 4, 5];
+    numbers.forEach(function printelements(element){
+        console.log('This is modern javascript method to print elements that is using forEach '+element)
+    })
+    document.write("\n\n")
+    document.write("<hr>");
+    // Using for of
+    let digits = [123, 456,678];
+    for (element of digits){
+        console.log('This is using for of method '+element)
+    }
+
+    // Iterating over objects or so called in Python dictionarie
+    let employee = {
+        name : "Raghav",
+        salary : 10000,
+        address  : 'Mumbai'
+    };
+// You'll use bactics like ``
+    for (key in employee){
+        console.log('This is for objects or dictionaries using bactics or symbol ``  ',`for ${key} of employee is ${employee[key]}`);
+    }
+
+    // While loop in JS
+    let numberis = 0;
+    while (numberis<4){
+        console.log(`${numberis} is less than 45, this is example of using while loop`);
+        numberis++;
+    }
+
+        // Do While loop in JS, giving single option for iis so it prints only once
+    let jis =34;
+    do{
+        console.log('Using Do loop',`value of j is ${jis}`);
+        jis++;
+    }while (jis<4);
+
+
+    let j =34;
+    do{
+        console.log(`${j} is less than 4 and we are inside do while loop`);
+        j++;
+    }while(j<4);
+    </script>
+</body>
+</html>
