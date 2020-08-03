@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is Date timet</title>
+    <style>
+        .container{
+            font-size: 23px;
+            background-color: red;
+            border:  2px solid gold;
+        }
+        #forTime{
+            font-size: 10px;
+            background-color: green;
+            border: 5px solid greenyellow;
+            font-weight: bold;
+        }
+        #time{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">This file is For Date time</div>
+    <p class="container">Year month Date Hours Minutes Seconds Milliseconds this format</p>
+    <p id='forTime'>Current time is <span id="time"></span></p>
+    <script>
+        console.log("For Date Time")
+        let now  = new Date();
+        console.log('Current time is', now);
+
+        let dt = new Date(1000);
+        console.log(dt)
+        let newDateis = new Date('2029-10-02');
+        console.log(newDateis)
+
+        // Year month Date Hours Minutes Seconds Milliseconds
+        let formatis = new Date(3020, 4, 12, 11, 10, 10, 1000);
+        console.log('This is my format date',formatis);
+
+        // Some inbuilt functions
+        let yearis = formatis.getFullYear();
+        console.log("Year is",yearis)
+        let monthis = formatis.getMonth();
+        console.log("month is",monthis)
+        
+        let houris = formatis.getHours();
+        console.log("hour is",houris)
+        let dateis = formatis.getDate();
+        console.log(dateis)
+        
+        // let newDateweCreate = 
+        formatis.setDate(23);
+        console.log('This is setting new date',formatis)
+        formatis.setDate(35);
+        console.log('Entering wrong date, itself get corrected',formatis)
+        formatis.setDate(39);
+        console.log('Entering wrong date, itself get corrected',formatis)
+
+        console.log("Printing current timestamp or current milllis",Date.now())
+
+        setInterval(updateTime,1000);
+        function updateTime(){
+            time.innerHTML = new Date();
+        }        
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetInterval setTimeout</title>
+</head>
+<body>
+    <div class="container">
+        This is a container
+    </div>
+    <p>If we want some function to exceute againa and agin after some time interval, then we have to do like below</p>
+    <ul>
+        <p>Time now is <span id="timeis"></span></p>
+        <li>setTimeout: allows us to run the function once after the interval of time</li>
+        <li>clearTimeout: allows us to run the function repeatedly after the interval of time</li>
+    </ul>
+    <script>
+        // You can pass multiple arguments
+        console.log('This is a tutoral for setting time interval');
+        function greet(name){
+            console.log('This is example of setTimeout, Hello! Good Morning ' + name)
+        }
+         timeout = setTimeout(greet, 50, "Yadu");
+         console.log(timeout)
+
+        // setTimeout(greet(), 5000, "Yadu"); here greet() is wrong
+        // Calling the function inside setTimout is wrong, that is using parenthesis
+        clearTimeout(timeout) 
+        // clearTimeout(timeout) if you use this your text won't be printed, it will 
+        // remove timeout id, or clears timeout id
+
+        // Using set interval
+        function hai(user){
+            console.log("This is example of set intreval, continuously prints, Hai " + user)
+        }
+        settime = setTimeout(hai, 1000, "Yadu");
+        console.log(settime)
+        // Remove dark mode to see number of interval coming again and again
+        // to clear interval below code
+        clearInterval(settime)
+        // You can also give interval to clear settime
+
+        console.log('Below is fucntion to display time')
+        function displayTime(){
+            time = new Date();
+            console.log(time);
+            document.getElementById('timeis').innerHTML = time;
+        }
+        // Now we will update time for every time interval we have given
+        settimeis = setInterval(displayTime , 5000);
+        // You can see time in both web page and console
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS evenets</title>
+    <style>
+        #btn{
+            padding:5px 3px;
+            color: red;
+            border: 2px solid:blue;
+            color: blanchedalmond;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!--Broser evenets
+    Click evenet has fired means click event has happened
+    Context menu
+    Mouseover/Mouseout
+    MouseUp/MouseDown
+    mousemove
+    submit
+    focus
+    DOMcontentload
+    transitionend-->
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio sapiente nostrum mollitia? Voluptas voluptatibus eligendi minus reprehenderit fuga excepturi veritatis et tenetur. Omnis maiores voluptatum, nam voluptate aut ipsa. Odio facilis placeat quasi inventore.</p>
+    </div>
+    <button id="btn" onclick="hide()">Show/hide</button>
+    <!-- So whenever you click on above button it should show and hide
+    So we need to make click event listen to this -->
+    <script>
+        function hide(){
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para')
+            
+            if(para.style.display != 'none'){
+                para.style.display = 'none';
+            } else{
+            para.style.display = 'block';
+                
+            };
+        }
+        // This is click event we can listen to event.
+        // Without using hide function
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover',function run(){
+            alert('Mouse inside');
+        })
+        
+        para.addEventListener('mouseout',function run(){
+            alert('Mouse now went outside');
+        })
+         document.getElementById('para');
+        para.addEventListener('mouseover',function run(){
+            console.log('Mouse inside');
+        })
+        
+        para.addEventListener('mouseout',function run(){
+            console.log('Mouse now went outside');
+        })
+
+    </script>
+</body>
+</html>
