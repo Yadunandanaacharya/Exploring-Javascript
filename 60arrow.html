@@ -8,26 +8,78 @@
 <body>
     <div class="container">Arrow functions</div>
     <script>
-        function greet(){
-            console.log('Simple exampleof function')
-        }
+        // function greet(){
+        //     console.log('Simple exampleof function')
+        // }
+        let greet = () => console.log('Hello, this is using arrow function');
+        let greetis = () => console.log('Hello, this is using arrow function');
 
+        greetis();
+        setInterval(() => {console.log('hai')}, 100000000);
+        
         greetings = ()=> {
             console.log('This is using Arrow function which is shortcut using =>')
         }
 
-        greet();
-        setTimeout(() =>{
-            console.log('Using Arrow function for setTimeout,here we need to function to be defined earlier set timeout is 10000')
-        },10000)
-
+        // greet();
+        // setInterval(() =>{
+        //     console.log('Using Arrow function for setTimeout,here we need to function to be defined earlier set timeout is 10000')
+        // },100)
+// So above greet function we can write in a single line.
+        
         let sum = (a,b) =>{
             return 'sum is',a+b
         }
 
         let sum2 = (a,b) => a+b;
 
+
+        
         let half = a => a/2;
+
+        // Using inside object arrow function
+        // this means in here object inside another object that is here speak function
+        // Used inside another object, this represents to speak functio.
+        // We'll use arrow function inside foreach, here for each is for loop,
+        // inside for loop we have used element like i in for loop 
+        let objectis = 
+        { nameis : ['Rgahav','Ram','Raghu','Ranjan'],
+         speak(){
+            this.nameis.forEach((element) => {
+                console.log('Bowwoooo bowooo',element)
+            });
+        }
+        }
+        objectis.speak()
+        // We did object, inside that created one object and executed it
+        // Calling function above
+
+        let anotherobjectis = {  greetthem : "This is ",
+             anonameis : ['Rgahav','Ram','Raghu','Ranjan'],
+         speak(){
+            this.anonameis.forEach((element) => {
+                console.log(this.greetthem + 'Speciality of arrow function',element)
+            });
+        }
+        }
+        anotherobjectis.speak()
+        // So in above because of using arrow function this will point to(refer to) object 
+        // present outside the function that is greetthem, or else usually this will
+        // point to orrefer to function like speak
+        // Because of using arrow function it will tell there is no function, I'm pointing to 
+        // object itself
+
+        let anotherobjec = {  greetthem : "This is ",
+             anonamei : ['Rgahav','Ram','Raghu','Ranjan'],
+         speak(){
+            this.anonamei.forEach(function thisisfunction(element) {
+                console.log(this.greetthem + 'in normal function, undefined will be displayed',element)
+            });
+        }
+        }
+        anotherobjec.speak()
+        // Undefined comes because this points to "tthisisfunctionhat", it does not points 
+        // to object outside function 
 
     </script>
 </body>
