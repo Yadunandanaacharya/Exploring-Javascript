@@ -1,0 +1,2 @@
+Writing in Browser JS  and developer console.
+Hai I'm printing texts of this file in other js file.
