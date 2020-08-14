@@ -7,7 +7,7 @@ const hostname = '127.0.0.1';
 const port = 3000;
 const home = fs.readFileSync('index.html');  /*Created in same folders, so that you can */
 const about = fs.readFileSync('./about.html'); /*directly mention  name of that file*/
-const contacts = fs.readFileSync('./contact.html');
+const contact = fs.readFileSync('./contact.html'); /* not contacts, file saved with name contact*/
 const services = fs.readFileSync('./services.html');
 
 // I could able find Imp error after splitting screen and compare with another code.
@@ -47,7 +47,7 @@ const server = http.createServer((req,res)=>{
     res.end(home)
   }
   else if(url == '/about'){
-    res.end(About)
+    res.end(about)         /*before you typed like About which  is wrong, type as like filename is there*/
   }
   else if(url == '/contact'){
     res.end(contact)

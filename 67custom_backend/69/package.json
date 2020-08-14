@@ -1,0 +1,19 @@
+{
+  "name": "69_npm",
+  "version": "1.0.0",
+  "description": "This is awesome",
+  "main": "no",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Hello",
+    "Awesome"
+  ],
+  "author": "Yadu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "slugify": "^1.4.5"
+  }
+}
