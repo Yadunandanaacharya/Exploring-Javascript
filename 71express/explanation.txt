@@ -1,0 +1,24 @@
+After creting file if you use postman:
+localhost:3000/ type this in postman
+
+It will give you response with GEt request
+
+Nodemon I have installed with 
+npm install -g nodemon
+for globally 
+rs - restart
+
+watching extensions: js,mjs,json for restarting
+
+I have used both get and post request. 
+You can change it in postman.
+With nodemon you can just save 
+automatically server will restart.
+
+
+Status code sending: app.get('/about',(req,res)=>{
+    res.status(200).send('Hi I am sending status code 200')
+})
+
+you will see this in postman
+

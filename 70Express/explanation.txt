@@ -1,0 +1,16 @@
+Using postman: visit dog.ceo website press on get API after that
+copy url from there and paste it inside postman and press on get something,
+
+You'll see one json link in postman click on url present over there in postman
+then you'll see cat's image there.
+
+When we'll https://dog.ceo/api/breeds/image/random hit this API reuest we'll get json
+response like
+{
+    "message": "https://images.dog.ceo/breeds/pinscher-miniature/n02107312_4540.jpg",
+    "status": "success"
+}
+
+jsonplaceholder: 
+
+Whatever we have done using if else, these tasks will be done by express easily.

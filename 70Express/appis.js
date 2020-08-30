@@ -6,7 +6,7 @@ const express = require('express')
 const { request } = require('http')
 
 const app = express();
-const port = 80;
+const port = 3000;
 app.get("/", (req,res)=>{
     res.send('This is my first express app')
 });

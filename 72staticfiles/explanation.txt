@@ -1,0 +1,48 @@
+Static files are those files which we want to kepp publicly on the server
+so that anybody can access it.  Without login anybosy can access that file.
+
+app.use('/static',express.static('static'))
+
+Here you need to create folder named with static.
+If you type "code ." in terminal then your current directory only
+will open in new window in vsCode.
+
+Create folder named static
+
+When you do http://localhost:3000/static/index.js in web page
+Display will be: console.log('Using static files')
+Which are contenst of index.js
+
+In express we can use template engines: takes an tokenized strings and produce a
+rendered strings. You can search in google about this.
+
+Using pug template engine
+
+Always install libraries in main directory like example 
+opening a new terminal: Exploring-Javascript-> "here install"
+
+Don't install inside 70Express.
+
+Using pug: app.set('view engine','pug')
+
+Using path module: 
+const path = require('path')
+
+IMPORTANT: 
+app.set('views', path.join(__dirname,'views'))
+wE have used above code with path module, so this checks for "views" folder
+in your current directory.
+
+Create views folder
+
+app.get('/', function (req, res) {
+  res.render('index', { title: 'Hey', message: 'Hello there!' })
+})
+This one copied from http://expressjs.com/en/guide/using-template-engines.html
+
+When you use : http://localhost:3000/pugdemo in browser
+It will display message you have written.
+Inside render you need to use same filename.
+
+If you see "view page source or Ctrl+U" then you can see it isproperly rendered
+with html file.
