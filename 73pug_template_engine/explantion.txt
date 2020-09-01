@@ -1,0 +1,56 @@
+Stuff or configuration both are same.
+
+After opening index.pug
+go to View-> apperance->enable Status bar-> press on pug -> Some dropdown will
+apper -> press on HTML. So that you can use "Shift + !" to get html body easily.
+
+Sending variable through HTMl:
+Like sending title in params which is an object
+
+We need to send params
+
+Title displayed as Pubg is the best game
+
+You need to write content with Inverted colon: "content"
+
+Important inside .pug file you need to use content inside flower bracket:
+#{content}
+
+Go to pug documentation there they have mentioned how to use pug with plain 
+text. If you want to use multiple texts then use "pipes"
+
+Pipe character will be "|" this symbol which is present upon enter keyword in
+the keyboard.
+
+Linking css file in pug. That is style.css
+Just check pug or if you are using ejs check ejs documenttaion how
+to use css files inside. 
+
+https://pugjs.org/language/includes.html
+
+With code: style
+        include style.css
+you'll get error.
+
+ style
+        include/static/style.css
+        With this also you'll get error.
+
+Now also you'll get error: Error: the "basedir" option 
+is required to use includes and extends with "absolute" paths
+
+So you need to go outside to get connected with app.Js with code "../"
+
+When we use include, program will check style.css file inside the Views folder.
+So we came out of one directory outside.
+
+Making links:  <li><a href="/">Home</a></li>
+            <li><a href="/">ABout</a></li>
+            <li><a href="/">Contact us</a></li>
+
+To see changes in browser execute always app.js file also, or else if you are using 
+nodemon then saving again and again is also good.
+
+Watch tutorial do your own searches in google and complete it.
+Just by copy pasting you won't learn anything, please keep this in mind.
+Don't copy paste by watching videos.
